@@ -6,7 +6,8 @@ block content
         a(href="/") Home
         br
         a(href="/new") New entry
+        br
         each val in articles    
-            p= val.title
+            b= val.title
             p= val.author
             p= val.body

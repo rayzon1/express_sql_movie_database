@@ -1,5 +1,19 @@
 extends layout
 
 block content
+    body
     h1= title
+    form(action='/new', method='POST')
+        p
+        | title: 
+        input(type='text', name='title', value=articles.title)
+        br
+        br
+        |          year: 
+        input(type='text', name='author', value=articles.author)
+        br
+        br
+        |          body: 
+        input(type='text', name='body', value=articles.body)
+        input(type='submit', value='Submit')
     
