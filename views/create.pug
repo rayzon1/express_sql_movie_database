@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    body
+        h1= title
+        a(href="/") Home
+        br
+        a(href="/new") New entry
+        each val in articles    
+            p= val.title
+            p= val.author
+            p= val.body
