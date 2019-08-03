@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    body
+        h1= title
+        br
+        a(href="/" class='link') Home
+        br
+        a(href="/new" class='link') New entry
+        br
+        div(class='articles')
+            each val in articles    
+                b= val.title
+                p= val.author
+                p= val.body
